@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ms" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Majlis Doa Selamat dan Aqiqah | Irsa & Iskandar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/color.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div id="image-popup" class="popup-overlay1" onclick="closeImagePopup()">
+      <img id="popup-img" src="" alt="popup" />
+    </div>
+
+    <audio id="bg-music" src="assets/audio/music.mp3" loop></audio>
+    <button id="music-btn" style="display: none;">
+      <img id="music-icon" src="assets/icons/music-sign.webp" alt="Music On" />
+    </button>
+
+    <main>
+      <div id="wrapper">
+        <div id="intro-screen" class="intro-screen">
+          <div class="intro-inner container">
+            <button id="enter-btn" class="animated-border" style="display: flex; flex-direction: column; align-items: center;">
+              <div style="font-family: 'GreatVibes'; text-align: center; margin-bottom: 8px;">
+                <p style="font-size: 1.5em; margin: 0; line-height: 1;">Irsa</p>
+                <p style="font-size: 1.2em; margin: 0; line-height: 1;">&</p>
+                <p style="font-size: 1.5em; margin: 0; line-height: 1;">Iskandar</p>
+              </div>
+              <img src="assets/img/love1.png" alt="Love" style="width: 80px; height: auto;" />
+                <p style="font-style: 'Playfair';margin-top: 2px; font-size: 0.7em; margin: 0; line-height: 1;">TEKAN SINI</p>
+
+            </button>
+          </div>
+        </div>
+        <div id="main-content" style="display: none;">
+          
+          <section class="container">
+            <img src="assets/img/star1.png" class="custom-top-left-bg" >
+            <h2>Majlis Doa Selamat dan Aqiqah</h2><br><br>
+            <p style="font-family: 'GreatVibes', sans-serif; font-size: 4em; margin: 0; color: #000000;">Irsa</p>
+            <p style="font-family: 'GreatVibes'; font-size: 2.5em;">&</p>
+            <p style="font-family: 'GreatVibes', sans-serif; font-size: 4em; margin: 0; color: #000000;">Iskandar</p><br><br>
+
+            <h3>Sabtu, 29 November 2025</h3>
+            <p>11 am - 6 pm</p><br>
+            <h3>Rumah Aman</h3>
+            <h3>34 Jln Anjung U8/35, The Enclave, Bukit Jelutong, 40150 Shah Alam, Selangor</h3>  
+
+              <button class="rsvp-btn rsvp-highlight" onclick="handleRSVPClick(this)">RSVP</button>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Majlis%20Doa%20Selamat%20dan%20Aqiqah%20Irsa%20%26%20Iskandar&dates=20251129T110000/20251129T180000&details=Majlis%20Doa%20Selamat%20dan%20Aqiqah%20di%20Rumah%20Aman%2C%2034%20Jln%20Anjung%20U8%2F35%2C%20The%20Enclave%2C%20Bukit%20Jelutong%2C%2040150%20Shah%20Alam%2C%20Selangor&location=Rumah%20Aman%2C%2034%20Jln%20Anjung%20U8%2F35%2C%20The%20Enclave%2C%20Bukit%20Jelutong%2C%2040150%20Shah%20Alam%2C%20Selangor&sf=true&output=xml" target="_blank">
+              <button class="tarikh-btn">Simpan Tarikh</button>
+            </a>
+            <br><br><br>
+
+            <img src="assets/img/star2.png" class="bottom-right-bg" >
+          </section>
+
+          <!-- <div class="carousel-wrapper">
+              <div class="carousel">
+                <img src="assets/img/homestay.jpeg" alt="Gambar 1" onclick="openImagePopup(this.src)" />
+              </div>
+            </div> -->
+
+          <section class="container" id="countdown-page">          
+            <h1>Menghitung Hari</h1>
+            <div class="countdown">
+              <div class="countdown-box">
+                <h2 id="days">50</h2>
+                <div class="countdown-label">Hari</div>
+              </div>
+              <div class="countdown-box">
+                <h2 id="hours">1</h2>
+                <div class="countdown-label">Jam</div>
+              </div>
+              <div class="countdown-box">
+                <h2 id="minutes">2</h2>
+                <div class="countdown-label">Minit</div>
+              </div>
+              <div class="countdown-box">
+                <h2 id="seconds">16</h2>
+                <div class="countdown-label">Saat</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 10px; justify-content: center; text-align: center;">
+              <div class="guest-count-label">
+                <h2 id="guest-count">--</h2>
+                Kehadiran
+              </div>
+              <div class="guest-count-label">
+                <h2 id="guest-count-no">--</h2>
+                Tidak Hadir
+              </div>
+            </div>
+          </section>
+
+          <section class="container" id="dress-code-section">
+
+            <h1>Dress Code</h1>
+            <img src="assets/img/star7.png" class="custom-bottom-left-bg" >
+
+            <p>Smart Casual</p>
+          </section>
+
+
+
+          <section class="shorter container">
+            <h1>Aturcara Majlis</h1>
+            <div class="timeline-text">
+              <div class="timeline-row">
+                <div class="time">11:00 AM</div>
+                <div class="event">Ketibaan Tetamu</div>
+              </div>
+              <div class="timeline-row">
+                <div class="time">12:00 PM</div>
+                <div class="event">Makan Tengahari</div>
+              </div>
+              <div class="timeline-row">
+                <div class="time">6:00 PM</div>
+                <div class="event">Majlis Bersurai</div>
+              </div>
+            </div>
+            <img src="assets/img/star6.png" class="bottom-right-bg" >
+          </section>
+
+          <section>
+            <p>Dengan penuh kesyukuran ke hadrat Ilahi, kami sekeluarga ingin menjemput Datuk/Datin/Tuan/Puan/Encik/Cik ke majlis kami.</p>
+          </section>
+        </div>
+
+        <section class="short container">
+          <h2>Ucapan</h2>
+          <div id="ucapan-list" class="ucapan-scroll"></div>
+          <button class="rsvp-btn rsvp-highlight" onclick="handleRSVPClick(this)">RSVP</button>
+          <img src="assets/img/star1.png" class="customm-bottom-left-bg" >
+        </section>
+        <br>
+
+        <div id="popup-overlay" class="popup-overlay" onclick="closePopup()"></div>
+
+
+        <section id="popup-rsvp" class="popup-section">
+          <button class="close" onclick="closePopup()">x</button>
+          <h2>RSVP</h2>
+
+          <div id="attendance-step" style="margin-top: 15%;">
+            <p style="color: black; align-self: center; font-size: 1em;">Untuk pertanyaan, sila hubungi:<br>Amira: 017 2883 711<br>Ariff: 019 2823 624</p>
+            <p style="color: black; align-self: center; font-size: 1em;">Adakah Datuk/Datin/Tuan/Puan/Encik/Cik akan menghadiri majlis ini?</p>
+            <button class="kehadiran" type="button" onclick="setAttendance('Hadir')">Ya</button>
+            <button class="kehadiran" type="button" onclick="setAttendance('Tidak Hadir')">Tidak</button>
+          </div>
+
+          <p id="rsvp-success" style="display:none; color: green; margin-top: 10px;">
+            TERIMA KASIH<br /> KEHADIRAN ANDA DINANTI
+          </p>
+
+          <form id="rsvp-form" action="#" method="POST" style="display:none;">
+            <input type="hidden" id="hadir-status" name="entry.1212652195" />
+
+            <p class="labell">Nama:</p>
+            <input type="text" id="name" name="entry.1440212509" placeholder="Nama anda" required />
+
+            <p class="labell">Bilangan Kehadiran:</p>
+            <select id="guest-amount" name="entry.1811924995" required>
+              <option value="" disabled selected>Pilih jumlah</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+
+            <p id="wordCount"><span class="labell">Ucapan:</span> (0 / 20 perkataan)</p>
+            <textarea id="speech" name="entry.1874381465" rows="4" placeholder="Tulis ucapan anda di sini"></textarea>
+            <script>
+              document.addEventListener('DOMContentLoaded', () => {
+                const textarea = document.getElementById('speech');
+                const counter  = document.getElementById('wordCount');
+
+                textarea.addEventListener('input', () => {
+                  let words = textarea.value.trim().split(/\s+/).filter(Boolean);
+                  if (words.length > 20) {
+                    words = words.slice(0, 20);
+                    textarea.value = words.join(' ');
+                  }
+                  counter.innerHTML = `<span class="labell">Ucapan:</span> (${words.length} / 20 perkataan)`;
+                });
+              });
+            </script>
+            <button class="hadir-submit" type="submit">Hantar</button>
+          </form>
+        </section>
+
+        <section id="popup-location" class="popup-section" style="text-align: center;">
+          <button class="close" onclick="closePopup()">x</button>
+          <h2>Lokasi</h2>
+          <div class="contact-container">
+            <p style="color:black;">
+              Rumah Aman<br>
+              34 Jln Anjung U8/35, The Enclave, Bukit Jelutong,<br>
+              40150 Shah Alam, Selangor<br>
+            </p>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Rumah%20Aman%2C%2034%20Jln%20Anjung%20U8%2F35%2C%20The%20Enclave%2C%20Bukit%20Jelutong%2C%2040150%20Shah%20Alam%2C%20Selangor" target="_blank" class="contact-link">
+              <div class="contact-box">
+                <div>
+                  <strong>Google Maps</strong><br />
+                </div>
+                <img src="assets/icons/google-maps.webp" alt="Google Maps" class="wa-icon" />
+              </div>
+            </a>
+
+            <a href="https://waze.com/ul?q=Rumah%20Aman%2C%2034%20Jln%20Anjung%20U8%2F35%2C%20The%20Enclave%2C%20Bukit%20Jelutong%2C%2040150%20Shah%20Alam%2C%20Selangor" target="_blank" class="contact-link">
+              <div class="contact-box">
+                <div>
+                  <strong>Waze</strong><br />
+                </div>
+                <img src="assets/icons/waze.webp" alt="Waze" class="wa-icon" />
+              </div>
+            </a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="navigation">
+      <div class="nav-links">
+        <div onclick="toggleSection('rsvp')">
+          <img src="assets/icons/email.webp" alt="RSVP" class="nav-icon" />
+          <span>RSVP</span>
+        </div>
+        <div onclick="toggleSection('location')">
+          <img src="assets/icons/location.webp" alt="Location" class="nav-icon" />
+          <span>Lokasi</span>
+        </div>
+      </div>
+    </footer>
+    <div id="confirm-popup" class="confirm-popup">
+      <p id="confirm-message"></p>
+      <div class="popup-buttons">
+        <button onclick="handleConfirm(true)">Ok</button>
+        <button onclick="handleConfirm(false)">Cancel</button>
+      </div>
+    </div>
+  </body>
+</html>

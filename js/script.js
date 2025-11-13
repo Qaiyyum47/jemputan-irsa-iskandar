@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
           clearInterval(scrollInterval);
         }
-      }, 60);
+      }, 100);
 
       window.addEventListener("scroll", () => {
         const currentY = window.scrollY;

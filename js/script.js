@@ -169,14 +169,32 @@ document.addEventListener("DOMContentLoaded", () => {
         icon.alt = "Music Off";
       });
 
+      let autoScroll = true;
+      let lastScrollY = 0;
+
+      const scrollInterval = setInterval(() => {
+        if (!autoScroll) return;
+        window.scrollBy(0, 2);
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+          clearInterval(scrollInterval);
+        }
+      }, 60);
+
       window.addEventListener("scroll", () => {
         const currentY = window.scrollY;
 
-        if (currentY > 0) {
+        if (currentY < lastScrollY) {
+          autoScroll = false;
+          clearInterval(scrollInterval);
+        }
+
+        if (currentY > lastScrollY) {
           btn.classList.add("hide");
         } else {
           btn.classList.remove("hide");
         }
+
+        lastScrollY = Math.max(0, currentY);
       });
     }, 150);
   });

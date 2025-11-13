@@ -4,7 +4,7 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
   padding-bottom: 60px;
   text-align: center;
   overflow-x: hidden;
@@ -42,8 +42,15 @@ main {
 }
 
 @font-face {
-  font-family: 'Poppins';
-  src: url('../assets/fonts/Quicksand-Regular.ttf') format('truetype');
+  font-family: 'LeagueSpartan';
+  src: url('../assets/fonts/LeagueSpartan-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Felixti';
+  src: url('../assets/fonts/Felixti.TTF') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -63,8 +70,8 @@ p,
 }
 
 h1 {
-  font-family: 'PlayFair', sans-serif;
-  font-size: 1.6em;
+  font-family: 'Felixti', sans-serif;
+  font-size: 1.2em;
   margin: 5px 0;
 }
 h2 {
@@ -73,13 +80,14 @@ h2 {
   margin: 3px 0;
 }
 h3 {
-  font-family: 'Poppins';
+  font-family: 'LeagueSpartan';
   font-size: 1em;
   margin: 8px 0;
 }
 p {
   font-size: 0.9em;
   margin: 4px 0;
+  color: var(--color-primary);
 }
 h1,
 h2,
@@ -98,9 +106,9 @@ p,
 .h3-main {
   font-family: 'PlayFair', sans-serif;
   margin: 0px 0;
-  font-size: 1.2rem;
+  font-size: 1em;
   margin: 8px 0;
-  color: #000000;
+  color: var(--color-primary);
 }
 
 img {
@@ -118,7 +126,7 @@ img {
 }
 
 .countdown-label {
-  color: #000;
+  color: var(--color-primary);
 }
 
 .countdown-box {
@@ -128,19 +136,19 @@ img {
   background-color: var(--color-button-bg);
 }
 .countdown-box h2 {
-  color: var(--color-button-bg);
+  color: var(--color-primary);
 }
 
 #guest-count {
-  color: #000;
+  color: var(--color-primary);
 }
 
 #guest-count-no {
-  color: #000;
+  color: var(--color-primary);
 }
 
 .guest-count-label {
-  color: #000;
+  color: var(--color-primary);
 }
 
 #navigation {
@@ -183,7 +191,7 @@ select {
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
 }
 
 input,
@@ -244,7 +252,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 55%;
+  height: 70%;
   background: #fff;
   z-index: 2000;
   padding: 20px 0px;
@@ -302,7 +310,7 @@ form textarea {
 
 .labell {
   font-size: 1em;
-  color: black;
+  color: var(--color-primary);
 }
 
 .carousel-wrapper {
@@ -371,11 +379,11 @@ form textarea {
 .time {
   font-weight: bold;
   margin-bottom: 4px;
-  color: #000;
+  color: var(--color-primary);
 }
 
 .event {
-  color: #000;
+  color: var(--color-primary);
 }
 
 .contact-container {
@@ -435,7 +443,7 @@ form textarea {
   width: 100%;
   max-width: 400px;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'LeagueSpartan', sans-serif;
   transition: background-color 0.2s;
 }
 
@@ -497,7 +505,7 @@ form textarea {
   font-size: 16px;
   animation: scroll-up 20s linear infinite;
   text-align: center;
-  color: black;
+  color: var(--color-primary);
 }
 
 @keyframes scroll-up {
@@ -751,7 +759,7 @@ form textarea {
 .customm-bottom-left-bg {
   position: absolute;
   bottom: 0;
-  left: -130px;
+  left: -100px;
   width: 60%;
   opacity: 0.8;
   pointer-events: none;

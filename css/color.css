@@ -1,16 +1,16 @@
 :root {
-  --color-primary: #333333; /* Dark grey for text */
+  --color-primary: #006400; /* Dark Green for text */
   --color-secondary: #F5F5F5; /* Soft light grey for background */
-  --color-button: #B0C4DE; /* Light Steel Blue for buttons */
-  --color-border: #B0C4DE; /* Light Steel Blue for borders */
+  --color-button: #8FBC8F; /* Dark Sea Green for buttons */
+  --color-border: #8FBC8F; /* Dark Sea Green for borders */
   --color-element-bg: #FFFFFF; /* White for element background */
-  --color-text: #333333; /* Dark grey for general text */
+  --color-text: #006400; /* Dark Green for general text */
   --color-button-text: #FFFFFF; /* White for button text */
   --color-button-bg: #B0C4DE; /* Light Steel Blue for button background */
 }
 
 body,
-p,
+
 h1,
 h2,
 h3,
@@ -23,7 +23,6 @@ h3,
 .event,
 .timeline-text,
 .contact-link,
-.ucapan-scroll p,
 .popup-section form,
 form input,
 form select,

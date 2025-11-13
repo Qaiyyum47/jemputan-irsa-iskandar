@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = e.target;
     const data = new FormData(form);
 
-    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfcUVx97NWmPHWNdAH88ckcygxY2fnyps574RFfC_e8XpwApA/formResponse", {
+    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSdL6q6P5H6AFKBLgIHj36nmh-CB5mTR4zrGoE3aEaKgCnuMPg/formResponse", {
       method: "POST",
       mode: "no-cors",
       body: data,
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function fetchAndRenderUcapan() {
-  fetch("https://script.google.com/macros/s/AKfycbyxJSt_I0NjFVka7cmYzdY00cSVV79V3BOxtkBDtYmyInLqzz8n-tKmRAOgKIxMcwVD/exec")
+  fetch("https://script.google.com/macros/s/AKfycbyABL3SDZ2gIL6zZglMEsRay5xE75nT3srxmC2LjfgWwSa07OLnGBb6wexe-7Emrctj/exec")
     .then(res => {
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);

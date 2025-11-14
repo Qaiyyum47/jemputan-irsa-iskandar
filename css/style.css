@@ -750,7 +750,7 @@ form textarea {
   position: absolute;
   bottom: 0.01;
   left: -100px;
-  width: 60%;
+  width: 40%; /* This controls the size */
   opacity: 0.8;
   pointer-events: none;
   z-index: 0;

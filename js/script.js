@@ -212,18 +212,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-btn.addEventListener("click", () => {
-  if (music.paused) {
-    music.play();
-    icon.src = "assets/icons/music-sign.webp";
-    icon.alt = "Music On";
-  } else {
-    music.pause();
-    icon.src = "assets/icons/mute.webp";
-    icon.alt = "Music Off";
-  }
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   const textarea = document.getElementById('speech');
   const wordCountDisplay = document.getElementById('wordCount');

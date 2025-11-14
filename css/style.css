@@ -754,7 +754,7 @@ form textarea {
   opacity: 0.8;
   pointer-events: none;
   z-index: 0;
-  transform: scaleX(-1);
+  transform: scaleX(-1) rotate(-45deg);
 }
 
 .customm-bottom-left-bg {
